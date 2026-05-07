@@ -22,7 +22,7 @@ const store = createStore({ dataFilePath: "./data/store.json" });
 const auth = createAuth({ dataFilePath: "./data/store.json" });
 const hasPublicAssets =
   existsSync("./public") && existsSync("./public/index.html");
-
+  
 const apiErrorResponseSchema = t.Object({
   error: t.String(),
   message: t.Optional(t.String()),
